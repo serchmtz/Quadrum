@@ -31,6 +31,7 @@ public:
 
 	QuadrumCode(const uint8_t* animationData, uint16_t planeRate);
 	
+	void startup(const uint8_t* animationData, uint16_t planeRate);
 	bool start();
 	void terminate();
 
@@ -68,7 +69,6 @@ private:
 	
 	bool continueAnimation = true;
 	
-	void startup(const uint8_t* animationData, uint16_t planeRate);
 	
 };
 

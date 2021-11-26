@@ -44,6 +44,7 @@ void QuadrumCode::startup(const uint8_t* animationData, uint16_t planeRate) {
 	
 	int16_t frameBitSize = pow(cubeSide, 3) * channelCount * channelSize;
 	this->frameDataSize = (int16_t) (ceil((float) frameBitSize / (float) BYTE_SIZE)) + 4;	// + 4 (sizeof(float)) because of frame duration at beginning
+        continueAnimation = true;
 }
 
 bool QuadrumCode::start() {
